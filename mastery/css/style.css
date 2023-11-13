@@ -5,8 +5,23 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif, Arial, sans-serif;
   font-size: 18px;
+}
+button {
+  padding: 15px 25px;
+  text-align: center;
+  border-radius: 5px;
+
+  color: black;
+  background-color: #fdc800;
+  font-weight: 700;
+  border-color: #fdc800;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 .clear {
   clear: both;
@@ -40,22 +55,22 @@ body {
 .logo span {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .logo i {
   display: inline-block;
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  
+  vertical-align: super;
+
   border-radius: 50%;
   background-color: #002146;
   font-size: 20px;
-  
+
   color: #fdc800;
   font-weight: 100;
-  
 }
 /* CAROUSEL */
 .carousel {
@@ -65,5 +80,153 @@ body {
   background-position: top;
 }
 /* INTRO */
+.intro {
+  margin-bottom: 70px;
+}
+.intro__left,
+.intro__right {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+.intro__left {
+  font-size: 1.3rem;
+}
 
+.intro__left p {
+  padding-bottom: 30px;
+}
 
+.intro__right img {
+  width: 100%;
+}
+.intro__content {
+  padding: 70px 0;
+  margin: auto;
+  width: 80%;
+}
+/* NUMBER */
+.number {
+  background-color: #f6f6f6;
+}
+.number .number__content {
+  width: 80%;
+  margin: auto;
+  padding: 60px;
+  margin-bottom: 50px;
+}
+.number .item__num {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 20px;
+}
+.number__item {
+  float: left;
+  width: 25%;
+}
+
+.number__item p {
+  float: left;
+  width: 50%;
+}
+.number__item .item__text {
+  padding: 15px 0;
+}
+/* SERVICES */
+.service {
+  padding: 60px;
+}
+.service__content {
+  margin: auto;
+  width: 80%;
+}
+.service .service__content {
+  background-color: white;
+}
+.service__content .service__column {
+  float: left;
+  width: 25%;
+}
+.service .column__item {
+  border: 1px solid #002146;
+  background-color: #002146;
+  color: white;
+
+  text-align: center;
+  width: 250px;
+  margin: 20px 10px 20px 20px;
+  padding: 40px;
+}
+
+.column__item i {
+  font-size: 40px;
+}
+/* NEWS */
+.news {
+  padding: 70px 0;
+  background-color: #f6f6f6;
+}
+.news__content {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+.news__left,
+.news__right {
+  float: left;
+  width: 50%;
+}
+.news__left img {
+  width: 200px;
+  float: left;
+  margin: 20px;
+  border-radius: 5px;
+}
+.news__post,
+.news__events {
+  background-color: white;
+  margin: 20px 40px 20px 0;
+}
+
+.events__text .text__item {
+  color: #153355;
+  padding: 20px;
+  text-align: center;
+}
+.news__content h3 {
+  padding: 20px 0;
+}
+.events__card {
+  float: left;
+  width: 30%;
+  margin: 20px;
+}
+.events__item {
+  margin: 20px;
+  overflow: hidden;
+}
+.news__content .button {
+  text-align: right;
+  padding: 10px 40px;
+}
+/* create card  */
+.events__card {
+  width: 18%;
+  text-align: center;
+}
+.card__top {
+  background-color: #fdc800;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.card__bottom {
+  background-color: #002146;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+}
+.card__num {
+  font-weight: 700;
+  font-size: 25px;
+}
