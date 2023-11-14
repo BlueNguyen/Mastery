@@ -22,7 +22,7 @@
       <div class="container">
         <a href="#" class="logo">
           <i class="fa fa-edit"></i>
-          <span>Mastery</span>
+          <span>&#160; Mastery</span>
         </a>
         <!-- Navigation Bar -->
         <ul>
@@ -62,7 +62,13 @@
     <div class="number">
       <div class="number__content">
         <div class="number__item">
-          <p class="item__num">60</p>
+          <p
+            class="item__num counter"
+            data-counter-time="4000"
+            data-counter-delay="10"
+          >
+            60
+          </p>
           <p class="item__text">
             PROFESSIONAL
             <br />
@@ -71,7 +77,13 @@
         </div>
 
         <div class="number__item">
-          <p class="item__num">18</p>
+          <p
+            class="item__num counter"
+            data-counter-time="4000"
+            data-counter-delay="10"
+          >
+            18
+          </p>
           <p class="item__text">
             NEW COURSES
             <br />
@@ -80,7 +92,13 @@
         </div>
 
         <div class="number__item">
-          <p class="item__num">34</p>
+          <p
+            class="item__num counter"
+            data-counter-time="4000"
+            data-counter-delay="10"
+          >
+            34
+          </p>
           <p class="item__text">
             LIVE SESSIONS
             <br />
@@ -89,7 +107,13 @@
         </div>
 
         <div class="number__item">
-          <p class="item__num">20</p>
+          <p
+            class="item__num counter"
+            data-counter-time="4000"
+            data-counter-delay="10"
+          >
+            20
+          </p>
           <p class="item__text">
             REGISTERED
             <br />
@@ -160,7 +184,7 @@
               <div class="post__text">
                 <div class="text__item">
                   <h3>Summer Course Starts</h3>
-                  <p>April 25, 2020</p>
+                  <p class="text__month">April 25, 2020</p>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Officia?
@@ -175,7 +199,7 @@
               </div>
               <div class="post__text">
                 <h3>About Artificial Intelligence</h3>
-                <p>March 25, 2020</p>
+                <p class="text__month">March 25, 2020</p>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Officia?
@@ -189,7 +213,7 @@
               </div>
               <div class="post__text">
                 <h3>New Exam Schedules</h3>
-                <p>February 25, 2020</p>
+                <p class="text__month">February 25, 2020</p>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Officia?
@@ -263,6 +287,72 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer__content">
+        <div class="content__items">
+          <div class="footer__item">
+            <div class="item__icon">
+              <h3>Contact Us</h3>
+              <i class="fa fa-map-marker-alt"></i>
+              <span>&nbsp; Estate Business, #32841 block, #221 DRS </span>
+              <br />
+              <span> Real estate business building, UK.</span>
+            </div>
+            <div class="item__icon">
+              <i class="fa fa-phone"></i>
+              <span>&nbsp; +(21)-255-999-8888</span>
+            </div>
+            <div class="item__icon">
+              <i class="fa fa-envelope-open"></i>
+              <span>&nbsp; corporate-mail@support.com</span>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3>Featured Links</h3>
+            <p><a href="#">Graduation</a></p>
+            <p><a href="#">Admissions</a></p>
+            <p><a href="#">Book Store</a></p>
+            <p><a href="#">International</a></p>
+            <p><a href="#">Courses</a></p>
+          </div>
+          <div class="footer__item">
+            <h3>Quick Links</h3>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Services</a></p>
+            <p><a href="#">Block</a></p>
+            <p><a href="#">Contact</a></p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <p class="copy">
+          &copy 2020 Mastery.All rights reserved| Designed by
+          <span class="end">W3layouts</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Thư viện hỗ trợ hiệu ứng countup number -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+      $(".counter").countUp({
+        time: 4000,
+        delay: 10,
+      });
+    </script>
   </body>
 </html>
